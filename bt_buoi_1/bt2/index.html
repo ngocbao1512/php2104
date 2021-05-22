@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tạo form điền thông tin trong suốt</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form>
+        <div class="row">
+            <label class="emaillabel">Email</label>
+            <label class="passwordlabel">Password</label>
+        </div>
+        <div class="row">
+            <input type="email" placeholder="Your Email" class="email">
+            <input type="password" placeholder="Enter Password" class="password">
+        </div>
+        </div>
+        <div class="row">
+            <label class="addresslabel">Address</label>
+        </div>
+        <div class="row">
+            <input type="text" placeholder="1234 Main St" class="address">
+        </div>
+        <div class="row">
+            <label class="address2label">address2</label>
+        </div>
+        <div class="row">
+            <input class="address2" type="text" placeholder="Apartment, studio,or floor">
+        </div>
+
+        <div class="row">
+            <div class="row4">
+                <label class="city">City</label>
+                <label class="state">State</label>
+                <label class="zip">zip</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row4">
+                <input type="text" placeholder="Hà Nội">
+                <!--dropdown choose state-->
+
+                <div class="dropdown">
+                    <input type="choose" placeholder="Choose...">
+                    <div class="dropdown-content">
+                        <li>Viet Nam</li>
+                        <li>Laos</li>
+                        <li>Indian</li>
+                    </div>
+                </div>
+                <!---->
+
+                <input type="text" placeholder="100000">
+            </div>
+        </div>
+        <div class="row">
+            <label class="tick-check">
+                <input type="checkbox" checked="checked" name="check"> Check me out
+            </label>
+        </div>
+        <div class="row">
+            <input type="submit" class="btn" value="Sign in">
+        </div>
+    </form>
+</body>
+
+</html>
