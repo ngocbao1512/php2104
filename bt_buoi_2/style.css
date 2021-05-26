@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(10, 2, 2);
+}
+.sidebar{
+    width: 100vh;
+    height: 5vh;
+    background-color:black;
+}
+.sidebar ul{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+ 
+}
+.sidebar ul li{
+    list-style: none;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    line-height: 5vh;
+
+
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.sidebar ul li:hover,
+.sidebar ul li:focus,
+.sidebar ul li:active{
+    background-color: rgb(46, 139, 87);
+    color: #fff;
+}
+.main{
+    display: grid;
+    grid-template-rows: 1fr 3fr 5fr;
+    width: 80vh;
+    margin: 20px auto;
+    border-left: 1px solid black;
+}
+.top_bar{
+     display: grid;
+     grid-template-columns: 1.5fr 2.5fr 1fr 1fr 1fr;
+     grid-template-rows: 4vh;
+      background-color: rgba(0, 0, 0, 0.63);
+      color: rgb(255, 255, 255);
+}
+.top_bar h1{
+    grid-column: 1/2;
+    font-size: 15px;
+    margin-top: 9px;
+    margin-left: 20px;
+}
+.top_bar ul{
+    grid-column:3/6;
+    align-items: stretch;
+    margin-right: 5px;
+    margin-top: 9px;
+    margin-right: 20px;
+}
+.top_bar ul:nth-child(1) li{
+    grid-column: 3/4;
+}
+.top_bar ul:nth-child(2) li{
+    grid-column: 4/5;
+}
+.top_bar ul:nth-child(3) li{
+    grid-column: 5/6;
+}
+
+.top_bar ul li{
+    list-style: none;
+    height: 100%;
+    width: 7vh;
+    float: right;
+}
+.top_bar ul li:hover{
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.493);
+
+}
+.top_bar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+h3{
+    grid-row: 2/3;
+    margin: 20px auto;
+    text-transform: uppercase;
+    font-weight: 900;
+    
+}
+form{
+    grid-row:3/4;
+    grid-template-rows: 1.5fr 1.5fr 1.5fr;
+    grid-template-columns: 80vh;
+}
+input{
+    width: 95%;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid darkgray;
+}
