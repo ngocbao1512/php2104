@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="classlist">
+        <span>Danh Sách Lớp</span>
+        <div class="to-do-button">
+            <button type="button" onclick="tableofallstudent()">list student</button>
+            <button type="button" onclick="sortByName()">sort-ABC</button>
+            <button type="button" onclick="sortByPoint()">sort-point</button>
+            <button type="button" onclick="reset()">reset</button>
+        </div>
+        <div id="tableofallstudent"></div>
+    </div>
+    <div id="search">
+        <span>Search</span>
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <input type="text" name="fname">
+            <input type="submit" value="Submit">
+        </form>
+        <div id="studentsearchintable"></div>
+    </div>
+    <div id="statistic">
+        <span>thống kê </span>
+        <div class="to-do-button">
+            <button onclick="pointBiggerEight()">Diem > 8</button>
+            <button onclick="SexIsNam()">Nam</button>
+            <button onclick="SexIsNu()">Nu</button>
+        </div>
+        <div id="statisticstudentintable"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
