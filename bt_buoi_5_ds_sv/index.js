@@ -194,12 +194,13 @@ function SexIsNu() {
 /* ========================== */
 
 /* lay data tu the input roi quet mang goi ham xuat data tra vao studentsearchintable  */
-function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
+function searchtable() {
+    var input = documentgetElementById("myInput") ;
+    var x = input.value.toUpperCase();
     var i = 0;
     var text2 = "";
     for (i = 0; i < studentList.length; i++) {
-        if (studentList[i][1] == x || studentList[i][2] == x || studentList[i][3] == x || studentList[i][4] == x) {
+        if (studentList[i][1].toUpperCase().indexOf(x) > -1 || studentList[i][2].toUpperCase().indexOf(x) > -1|| studentList[i][3].indexOf(x) > -1|| studentList[i][4].indexOf(x) > -1) {
             text2 += "<tr>"
                 + "<td>" + studentList[i][0] + "</td>"
                 + "<td>" + studentList[i][1] + "</td>"

@@ -22,10 +22,7 @@
     </div>
     <div id="search">
         <span>Search</span>
-        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-            <input type="text" name="fname">
-            <input type="submit" value="Submit">
-        </form>
+        <input type="text" id="myInput" onkeyup="searchtable()" placeholder="Search for names.." title="Type in a name">
         <div id="studentsearchintable"></div>
     </div>
     <div id="statistic">
