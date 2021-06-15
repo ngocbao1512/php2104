@@ -1,0 +1,51 @@
+<!-- 
+    Bài 1:
+Input: cho chuỗi bất kỳ, vd: "Viet nam vo dich, vo dich"
+Output: 
+- đếm xem chuỗi có bao nhiêu ký tự
+- đếm xem chuỗi có bao nhiêu từ
+- những từ nào trùng lặp, và lặp bao nhiêu lần
+- những ký tự nào lặp, và lặp bao nhiêu lần
+ -->
+ <html>
+
+    <body>
+        <p id="demo"></p>
+        <script>
+            var s = "Viet nam vo dich, vo dich";
+            /* xoa dau , */
+            var n = s.replace(',', "");
+            /* chuyen chuoi thanh mang  */
+            var ar = n.split(" ");
+            var dem;
+            var result = "";
+            var  lap = new Array();
+            var dem2;
+            for (var i = 0; i <= ar.length; i++) {
+                dem = 0;
+                /* check lap voi a[i] */
+                 
+                 dem2 = 0;
+                for (var f = 0; f < lap.length; f++) {
+                    if (ar[i] == lap[f]) {
+                        dem2++;
+                    }
+                }
+                if(dem2 == 0) {
+                    for (var j = i; j < ar.length; j++) {
+                        if (ar[i] == ar[j]) {
+                            dem++;
+                            lap.push(ar[i]);
+    
+                        }
+                    }
+                }
+               if(dem!=0) {
+                result += ar[i] + " lap lai " + dem + " lan <br />";
+               }
+            }
+            document.getElementById("demo").innerHTML = result;
+        </script>
+    </body>
+    
+    </html>
