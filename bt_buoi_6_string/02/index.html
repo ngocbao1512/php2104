@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>check value form login </title>
+</head>
+
+<body>
+    <form id="form" name="myForm">
+        <div class="row">
+            <label class="emaillabel" onchange="onChangeSubmit()">Email</label>
+            <input type="email" placeholder="Your Email" id="email" name="femail">
+
+        </div>
+        <div class="row">
+            <label class="passwordlabel">Password</label>
+            <input type="password" placeholder="Enter Password" id="password" name="fpass">
+        </div>
+        <div class="row" id="demo" style="color: red;">
+            
+        </div>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
