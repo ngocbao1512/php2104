@@ -16,10 +16,15 @@ This tutorial
  git status : check trạng thái<br>
  
  
-**=== terminal--- <br>
+**=== terminal ubuntu --- <br>
 ctrl + alt + t : mở terminal**<br>
 
 ls -ld : xem danh sách thư mục file <br>
+pwd : xem đang làm việc ở đâu <br>
+mkdir + tên thư mục : tạo một thư mục <br>
+cd + tên thư mục : làm việc với thư mục <br>
+echo + "content" > tên file mới  : tạo ra một file với content <br>
+cat + tên file : hiện thị nội dung file <br>
 new file ' tên file mới ' : tạo mới một file <br>
 apt sudo install : download cái gì đấy <br>
 sudo apt update  : cập nhật phiên bản mới nhất cho các ứng dụng <br>
