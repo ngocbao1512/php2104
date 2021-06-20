@@ -10,8 +10,9 @@ body {
     justify-content: center;
 }
 form {
-    margin-top: 3rem;
-    padding: 3rem;
+    margin-top: 1rem;
+    padding: 2rem;
     border: 1px solid grey;
     min-width: 25vw;
+    background-color: #eeed9f9c;
 }
