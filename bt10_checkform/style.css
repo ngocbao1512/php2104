@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    margin-top: 3rem;
+    padding: 3rem;
+    border: 1px solid grey;
+    min-width: 25vw;
+}
