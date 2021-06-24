@@ -95,16 +95,15 @@
     <!--my script js-->
     <script>
         var namsinh="";
-        var resultListArray = new Array();
-        /* sau khi check ham da enable thi push vao array */
         $(document).ready(function () {
             for (var i = 0;i < 8;i++ ) {
                 if (i==5||i==6) {
                     continue;
                 }
-                $("label")[i].after("*");
+                $("label")[i].after("<b>*</b>");
             }
-           
+            var resultListArray = new Array();
+        /* sau khi check ham da enable thi push vao array */
             $("input").change(function () {
                 /* check tất cả các hàm nếu trả về true hết thì add class enable không thì remove enable */
                 
