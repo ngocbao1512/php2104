@@ -7,7 +7,7 @@ This tutorial
  git version : check version<br>
  git clone 'link reponsive' : kéo code về máy <br>
  git branch : kiểm tra nhánh <br>
- git check out -b ' tên nhánh ' : tạo ra nhánh mới và chuyển qua nhánh đó <br>
+ git checkout -b ' tên nhánh ' : tạo ra nhánh mới và chuyển qua nhánh đó <br>
  git add . <br>
  git commit -m "'trong này để ghi chú thích file commit'"<br>
  git log : hiển thị danh sách các file commit<br>
